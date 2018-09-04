@@ -1,0 +1,1 @@
+import arrOfEvents from './dataModule';
