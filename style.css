@@ -14,22 +14,36 @@ header {
 }
 
 .container {
-    text-decoration: none;
     width: 70%;
     text-align: center;
     margin-left: 15%;
+}
+
+.container a {
+    text-decoration: none;
 }
 
 .container div {
     border-bottom: 1px solid gray;
     margin-top: 20px;
     box-shadow: -4px 8px 19px 0px rgba(50, 50, 50, 0.97);
+    transition: background-color 0.2s linear 0.1s; 
 }
 
 .container p {
     padding: 15px 0px;
     font-size: 15px;
     color: #f64060;
+    transition: color 0.2s linear 0.1s; 
+}
+
+.container div:hover {
+    cursor: pointer;
+    background-color: #f64060;
+}
+
+.container div:hover p {
+    color: white;
 }
 
 .container img {
