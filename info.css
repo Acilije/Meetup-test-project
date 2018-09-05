@@ -4,6 +4,58 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'DancingScript-Regular';
+    src: url('./fonts/DancingScript-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'RolleteQaku-Regular';
+    src: url('./fonts/RolleteQaku-Regular.otf');
+}
+
+header {
+    padding: 30px 0px;
+    text-align: center;
+    font-family: 'RolleteQaku-Regular';
+    font-size: 30px;
+    letter-spacing: 1px;
+    word-spacing: 7px;
+    font-weight: bold;
+    background-color: white;
+    color: #f64060;
+}
+
+body {
+    text-align: center;
+}
+
+body img {
+    width: 300px;
+    height: 300px;
+    margin: 20px 0px; 
+}
+
+body h5 {
+    font-size: 17px;
+    margin: 5px 0px;
+}
+
+body p {
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: 'DancingScript-Regular';
+}
+
+footer {
+    padding: 30px 0px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: white;
+    color: #f64060;
+}
+
 .google {
     width: 200px;
     height: 200px;

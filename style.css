@@ -24,7 +24,6 @@ header {
 }
 
 .container div {
-    border-bottom: 1px solid gray;
     margin-top: 20px;
     box-shadow: -4px 8px 19px 0px rgba(50, 50, 50, 0.97);
     transition: background-color 0.2s linear 0.1s; 

@@ -50,6 +50,14 @@ function createInfoEvent(name, picture, description, city, street, longitude, la
     var headerText = document.createTextNode(name);
     header.appendChild(headerText);
     body.appendChild(header);
+    var city1 = document.createElement('h5');
+    var cityText = document.createTextNode(city)
+    city1.appendChild(cityText)
+    body.appendChild(city1);
+    var street1 = document.createElement('h5');
+    var streetText = document.createTextNode(street)
+    street1.appendChild(streetText)
+    body.appendChild(street1);
     var image = document.createElement('img');
     if (picture == 'undefined') {
         image.setAttribute('src', './meetup.jpg');
@@ -57,32 +65,16 @@ function createInfoEvent(name, picture, description, city, street, longitude, la
         image.setAttribute('src', picture);
     }
     body.appendChild(image);
-    var city1 = document.createElement('p');
-    var cityText = document.createTextNode(city)
-    city1.appendChild(cityText)
-    body.appendChild(city1);
-    var street1 = document.createElement('p');
-    var streetText = document.createTextNode(street)
-    street1.appendChild(streetText)
-    body.appendChild(street1);
+
     var description1 = document.createElement('p');
     description1.innerHTML = description;
     body.appendChild(description1);
 
-    var divGoogle = document.createElement('div');
-    divGoogle.setAttribute('class', 'google');
-    body.appendChild(divGoogle);
+    var footer = document.createElement('footer');
+    var footerText = document.createTextNode('Copyright &copy Aleksandar Miloradovic');
+    footer.appendChild(footerText);
+    body.appendChild(footer);
 
-    var map;
-      function initMap() {
-        map = new google.maps.Map(document.querySelector('.google'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
-    var scriptGoogle = document.createElement('script')
-    scriptGoogle.setAttribute('src','https://maps.googleapis.com/maps/api/js?key=https://cors-anywhere.herokuapp.com/api.meetup.com/2/concierge?country=rs&offset=0&city=Belgrade&photo-host=public&page=500&sig_id=262525333&sig=9afb2345691a7494413f14bb4e6f70921c06206e&callback=initMap')
-    body.appendChild(scriptGoogle)
 }
 
 export {

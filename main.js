@@ -7,12 +7,9 @@ httpRequest.send();
 httpRequest.addEventListener('load', function () {
 
         var parseObj = JSON.parse(httpRequest.responseText);
-        console.log(arrOfEvents(parseObj.results));
         
         createEventCards(arrOfEvents(parseObj.results));
         clickOnDiv();
     
 });
 
-
-// https://cors-anywhere.herokuapp.com/
