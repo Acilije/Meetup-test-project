@@ -13,7 +13,7 @@ function arrOfEvents(arr) {
     return arr.map(function (el) {
         return new Event(el);
     }).filter(function (el) {
-        return el.name == "Belgrade";
+        return el.city == "Belgrade";
     })
 }
 
